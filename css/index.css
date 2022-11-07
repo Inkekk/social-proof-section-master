@@ -58,6 +58,7 @@ h1 {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-self: center;
 }
 
 .rate-text {
@@ -119,7 +120,7 @@ h1 {
   font-size: 17px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 678px) {
   body {
     margin: 0;
     max-width: none;
