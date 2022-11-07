@@ -1,0 +1,191 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  max-width: 375px;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 5rem 1rem;
+}
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.desc {
+  color: hsl(303, 10%, 53%);
+  line-height: 22px;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 35px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  padding: 0 1rem;
+  line-height: 28px;
+}
+
+.rate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rate-container {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rate-star {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.rate-text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2rem;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+}
+
+.comment-container img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.comment-perfil {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.name {
+  font-weight: 700;
+  color: #fff;
+}
+
+.name,
+.verified {
+  font-size: 17px;
+}
+
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.verified {
+  font-weight: 500;
+  color: hsl(333, 80%, 67%);
+}
+
+.comment {
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 17px;
+}
+
+@media (min-width: 678px) {
+  body {
+    margin: 0;
+    max-width: none;
+  }
+
+  main {
+    padding: 7rem;
+  }
+
+  .wrapper {
+    /* align-items: center; */
+    text-align: start;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 50% 50%;
+  }
+
+  .desc,
+  h1 {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  #rate-2 {
+    margin-left: 2rem;
+  }
+
+  #rate-3 {
+    margin-left: 4rem;
+  }
+
+  .rate-container {
+    padding: 1.5rem;
+    flex-direction: row;
+    width: 60%;
+    gap: 25px;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .comment-list {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .comment-container {
+    height: max-content;
+  }
+
+  #comment-2 {
+    margin-top: 1.5rem;
+  }
+
+  #comment-3 {
+    margin-top: 3rem;
+  }
+
+  .comment {
+    line-height: 28px;
+    width: 90%;
+  }
+
+}
